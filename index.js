@@ -16,11 +16,9 @@ function reverseString(string) {
 }
 
 function isPalindrome(string) {
-  if (string.length === 1) {
+  if (string.length === 1 || string.length === 0) {
     return true
-  }
-  if (string.length > 1) {
-    if (string[0] === string[string.length - 1]) {
+  }else if (string[0] === string[string.length - 1]) {
       isPalindrome(string.slice(1, string-length - 1))
     } else {
     return false
